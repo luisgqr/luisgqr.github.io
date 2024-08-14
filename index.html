@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <link th:rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css} " />
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--ENCABEZADO DEL MENÚ-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">LuiGqR</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarmenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--seccion inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto_pro.jpeg" alt="">
+            </div>
+            <h1>Luis Gilder Quispe Roca</h1>
+            <br>
+            <h2>PROGRAMADOR - DESARROLLADOR</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/desarrolladorprogramador/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/luis-gilder-quispe-roca/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p><span>Hola, soy Luis. </span>Obtuve el Bachiller en la carrera de <span>Ingeniería de Sistemas e Informática</span>, me agrada la programar y
+                desarrollar diversos sistemas. Ahora, me encuentro en busca que nuevos desafios y retos que pongan al límite mis capacidades
+                para poder seguir formándome como profesional adquiriendo nuevas experiencias como programador. Te invito a visitar mi portafolio y sepas los conocimientos actuales que poseo.</p>
+
+                <div class="fila">
+                    <!--DATOS PERSONALES-->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>DNI</strong>
+                                74376266
+                            </li>
+                            <li>
+                                <strong>Edad</strong>
+                                25 años
+                            </li>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                09-08-1998
+                            </li>
+                            <li>
+                                <strong>Teléfono</strong>
+                                +56 904273748
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                luis_qr_05@hotmail.com
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                AH UPIS Las Mercedes, Lima, Perú
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>Programador</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--INTERESES-->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Videojuegos</span>                          
+                            </div>
+                            <div class="interes">                           
+                                <i class="fa-solid fa-computer"></i>
+                                <span>Programar</span>
+                            </div>
+                            <div class="interes">                           
+                                <i class="fa-regular fa-futbol"></i>
+                                <span>Deportes</span>
+                            </div>
+                            <div class="interes">                           
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>Música</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Leer</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-film"></i>
+                                <span>Películas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    <a href="archivo/CURRICULUM_VITAE_LGQR.pdf" download="Curriculum_LUIS_GILDER_QUISPE_ROCA">Descargar CV  <i class="fa-solid fa-download"></i></a>
+                    <span class="overlay"></span>
+                </button>
+        </div>
+    </section>
+    <!--seccion habilidades-->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!--habilidades tecnicas-->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="habilidad">
+                        <span>Javasript</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso javascript">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>HTML & CSS</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso htmlcss">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Java</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso java">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>SQL Server</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso sql">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Office</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso office">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--habilidades profesionales-->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="habilidad">
+                        <span>Comunicación</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso comunicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso equipo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Responsabilidad</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso responsable">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Dedicación</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso dedicado">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--seccion curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Carrera: Ingeniería de Sistemas e Informática</h4>
+                        <span class="casa">Universidad Tecnológica del Perú</span>
+                        <span class="fecha">2017-2022</span>
+                        <p>Elegí la carrera, debido a que me llamo la atención de como es el funcionamiento de los sistemas de 
+                            información; como a través de una correcta estructura, diseño y codificación se puede entregar un 
+                            sistema de calidad. Por ello, la UTP me ayudo con el incio de mi formación profesional con buenos maestros 
+                            y adecuada tecnología. Por otro lado, termine la carrera en 6 años, debido a que me ausente 1 año por el brote 
+                            del Covid-19.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Asistente Técnico</h4>
+                        <span class="casa">TG International Service</span>
+                        <span class="fecha">2023-2023</span>
+                        <p>• Cargo: Técnico de Mantenimiento y Emergencias,
+                            Asistente Técnico BITEL <br>
+                            • Tareas: <br>
+                            &nbsp;&nbsp;1. Planificación, Gestión y Monitoreo (Cell Down,
+                            &nbsp;&nbsp;Site Down, incidencias, Radio, etc) <br>
+                            &nbsp;&nbsp;2. Control de inventario<br>
+                            &nbsp;&nbsp;3. Gestión de Accesos(Llamadas y correos al cliente)<br>
+                            &nbsp;&nbsp;4. Planificación, Gestión y Monitoreo SWAP BBU 4G
+                            &nbsp;&nbsp;A 5G(Requerimientos, Accesos, Soporte,
+                            &nbsp;&nbsp;Reportes)
+                            • Ubicación: José Bernardo Alcedo 420, Lince</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operario de Almacén</h4>
+                        <span class="casa">CREDITEX</span>
+                        <span class="fecha">2022-2022</span>
+                        <p>
+                            • Cargo: Operario de Almacén, Logística <br>
+                            • Tareas: Control de inventario, POP y despacho de
+                            artículos, registro y salida de artículos en sistema
+                            Oracle. <br>
+                            • Ubicación: Lima, Ate-Vitarte
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--seccion portafolio-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="container-fluid">
+                    <div class="proyecto">
+                        <img src="img/inventario.png" alt="">
+                        <div class="overlay">
+                            <h3>Sistema de Inventario</h3>
+                            <p>
+                                Programa: NetBeans<br>
+                                Lenguajes: Java <br>
+                                Base de datos: MySql
+                             </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button><a href="https://youtu.be/aN8Qwmy-z-0">Ver Prueba</a></button>
+                    </div>
+                    <div>
+                        <button><a href="https://github.com/luisgqr/inventario.git">Ver Código</a></button>
+                    </div>
+                </div>               
+                <div class="container-fluid">
+                    <div class="proyecto">
+                        <img src="img/compuganga.png" alt="">
+                        <div class="overlay">
+                            <h3>CompuGanga</h3>
+                            <p>Ecommerce <br>
+                               Programa: Visual Studio Code <br>
+                               Lenguajes: Java, Html, Css <br>
+                               Base de datos: PostgreSQL
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button><a href="https://youtu.be/QENpjAfQ4lY">Ver Prueba</a></button>
+                    </div>
+                    <div>
+                        <button><a href="https://github.com/luisgqr/CompuGanga.git">Ver Código</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--seccion contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Nombre" name="nom" id="nom">
+                    <input type="text" placeholder="Número telefónico" id="tel">
+                    <input type="text" placeholder="Correo Electrónico" id="cor">
+                    <input type="text" placeholder="Asunto" id="asu">
+                    <textarea name="" id="men" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="button" onclick="captura()">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--mapa-->
+                <div class="col">
+                    <img src="img/ubica.jpg.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                UPIS Las Mercedes, Calle Las Palmeras Mz.E Lt.3
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contactanos al +56 904 273 748
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: luiguiqr123@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/desarrolladorprogramador/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/luis-gilder-quispe-roca/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
